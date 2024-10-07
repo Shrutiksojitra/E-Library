@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import BookDetail from '../components/BookDetail';
 
-// Sample Data (Replace with API calls if needed)
+
 const sampleBooks = [
   {
     id: 1,
@@ -20,14 +20,14 @@ const sampleBooks = [
     publicationDate: '1960-07-11',
     description: 'A novel about racial injustice in the American South.',
   },
-  // Add more sample books as necessary
+  
 ];
 
 const BookPage = () => {
-  const { id } = useParams(); // Gets the book ID from the URL
-  const bookId = parseInt(id, 10); // Convert the id string to a number
+  const { id } = useParams(); 
+  const bookId = parseInt(id, 10); 
 
-  // Find the book by ID (this would be fetched from an API in a real-world app)
+ 
   const book = sampleBooks.find((b) => b.id === bookId);
 
   if (!book) {

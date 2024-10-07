@@ -6,40 +6,40 @@ import { Link } from 'react-router-dom';
 const sampleBooks = [
   {
     id: 1,
-    title: 'The Great Gatsby',
-    author: 'F. Scott Fitzgerald',
-    genre: 'Classics',
+    title: 'Goa trip ',
+    author: 'Me and Brother',
+    genre: 'Not',
     publicationDate: '1925-04-10',
     isBorrowed: false,
   },
   {
     id: 2,
-    title: 'To Kill a Mockingbird',
-    author: 'Harper Lee',
-    genre: 'Fiction',
-    publicationDate: '1960-07-11',
+    title: 'Movie Plan',
+    author: 'Me and Brother',
+    genre: 'Not',
+    publicationDate: '1925-04-10',
     isBorrowed: true,
   },
-  // Add more sample books as necessary
+
 ];
 
 const HomePage = () => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    // Normally you'd fetch data from an API, but here we use sample data.
+   
     setBooks(sampleBooks);
   }, []);
 
   const handleBorrow = (book) => {
-    // Logic to borrow a book
+   
     setBooks(
       books.map((b) => (b.id === book.id ? { ...b, isBorrowed: true } : b))
     );
   };
 
   const handleReturn = (book) => {
-    // Logic to return a borrowed book
+  
     setBooks(
       books.map((b) => (b.id === book.id ? { ...b, isBorrowed: false } : b))
     );
