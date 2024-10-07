@@ -6,19 +6,19 @@ import BookDetail from '../components/BookDetail';
 const sampleBooks = [
   {
     id: 1,
-    title: 'The Great Gatsby',
-    author: 'F. Scott Fitzgerald',
-    genre: 'Classics',
+    title: 'Goa',
+    author: 'Scout op',
+    genre: 'Not',
     publicationDate: '1925-04-10',
-    description: 'A novel about the American dream and the roaring twenties.',
+    description: 'lorem ispem lorem ispem lorem ispem lorem ispem lorem ispem ',
   },
   {
     id: 2,
-    title: 'To Kill a Mockingbird',
-    author: 'Harper Lee',
-    genre: 'Fiction',
+    title: 'Movie',
+    author: 'Jhonathan ',
+    genre: 'Not',
     publicationDate: '1960-07-11',
-    description: 'A novel about racial injustice in the American South.',
+    description: 'lorem ispem lorem ispem lorem ispem lorem ispem lorem ispem',
   },
   
 ];
